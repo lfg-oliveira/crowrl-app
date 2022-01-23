@@ -1,0 +1,24 @@
+{
+  "name": "crow-url-shortener-server",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Luiz Felipe Guidorizzi de Oliveira",
+  "scripts": {
+    "build": "tsc -p ./",
+    "start": "npm run build && node ./",
+    "dev": "tsnd --respawn --ignore-watch --watch -- ./src/index.ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.10",
+    "@types/redis": "^4.0.11",
+    "ts-node-dev": "^1.1.8"
+  },
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "redis": "^4.0.2",
+    "typescript": "^4.5.5"
+  }
+}
