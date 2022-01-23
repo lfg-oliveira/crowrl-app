@@ -7,7 +7,7 @@
     "build": "tsc -p ./",
     "start": "npm run build && node ./",
     "dev": "tsnd --respawn --rs --ignore-watch --watch -- ./src/index.ts",
-    "heroku-postbuild": "cd ./client && yarn && yarn run start"
+    "heroku-postbuild": "cd ./client && yarn && yarn run build"
   },
   "license": "MIT",
   "devDependencies": {

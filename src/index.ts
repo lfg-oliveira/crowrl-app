@@ -4,6 +4,8 @@ import cors from 'cors';
 const PORT = process.env.PORT || 5050;
 const app = express();
 
+app.use(express.static(__dirname + "client/build/"));
+
 app.use(urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
