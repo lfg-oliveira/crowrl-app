@@ -1,8 +1,7 @@
-import { ObjectId } from "mongodb";
 
 interface IUrlShortener {
-    _id?: ObjectId ,
-    url?: string,
+    _id?: string ,
+    url: string,
     shortenedUrl?: string
 }
 
